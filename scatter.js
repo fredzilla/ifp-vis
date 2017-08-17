@@ -65,7 +65,6 @@ d3.csv("ofile.csv", function(data) {
 
   // this is what happens when a circle is clicked
   var circleclick = function(){
-    console.log(this);
     var sid = this.getAttribute("data-serial");
     var html = "<h3>Top " + topn + " most similar.<br/>" + alldata[sid]["Sentence"] + "</h3>";
 
